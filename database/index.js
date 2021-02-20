@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
+const mongoUri = require('../configDb')
 
-const mongoUri = 'mongodb://localhost:27017/nbAction';
 const db = mongoose.connect(mongoUri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 db

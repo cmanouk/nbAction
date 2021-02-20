@@ -8,7 +8,7 @@ const userSchema = new mongoose.Schema({
   },
   phoneNumber: String,
   pendingRequests: [{ username: String }],
-  friends: [{ username: String, phoneNumber: String }],
+  friends: [{ _id: String, username: String }],
   favorites: {
     teams: [{ teamName: String }],
     players: [{ playerName: String }]
